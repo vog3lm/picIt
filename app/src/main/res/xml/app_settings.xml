@@ -1,0 +1,74 @@
+<androidx.preference.PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/preference_style">
+
+        <SwitchPreferenceCompat
+            app:iconSpaceReserved="false"
+            app:key="mode"
+            app:summary="Toggle dark mode theme"
+            app:title="Dark Mode" />
+
+        <ListPreference
+            app:iconSpaceReserved="false"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="1"
+            app:key="theme"
+            app:title="Select Theme"
+            app:summary="Select basic theme colors."
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:iconSpaceReserved="false"
+            app:entries="@array/accent_entries"
+            app:entryValues="@array/accent_values"
+            app:defaultValue="1"
+            app:key="accent"
+            app:title="Accent Color"
+            app:summary="Change theme accent color."
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:iconSpaceReserved="false"
+            app:entries="@array/background_entries"
+            app:entryValues="@array/background_values"
+            app:defaultValue="1"
+            app:key="background"
+            app:title="Widget Background"
+            app:summary="Change home screen widget background color"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/preference_app">
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/preference_others">
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="feedback"
+            app:summary="Report technical issues or suggest new features"
+            app:title="Feedback" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="rate"
+            app:title="Rate" />
+
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="about"
+            app:title="About" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
